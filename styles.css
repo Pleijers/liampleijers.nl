@@ -102,6 +102,13 @@ h2 {
 
 .sub { font-size: 21px; color: var(--muted); max-width: 36ch; margin-bottom: 30px; }
 
+/* hero support line (tijd terug + subtiele sea-hint) */
+.hero .sub { margin-bottom: 16px; }
+.hero-note { font-size: 17px; color: var(--muted); max-width: 42ch; margin-bottom: 30px; }
+
+/* werkwijze afsluiting */
+.work-note { font-size: 17px; color: var(--muted); max-width: 44ch; margin-top: 28px; }
+
 /* status pill line */
 .status { font-size: 15px; color: var(--muted); margin-bottom: 22px; }
 .dot {
