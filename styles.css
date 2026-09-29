@@ -163,6 +163,11 @@ h2 {
 .case .t a:hover { border-bottom-color: var(--ink); }
 .case .ext { color: var(--faint); font-size: 0.9em; margin-left: 2px; }
 .case p { color: var(--muted); font-size: 17px; margin-top: 4px; }
+.case .result { color: var(--ink); font-size: 15px; font-weight: 500; margin-top: 10px; }
+.case .result::before { content: "\2192\00a0"; color: var(--faint); }
+.case .demo { margin-top: 6px; }
+.case .demo a { color: var(--ink); font-size: 15px; text-decoration: none; border-bottom: 1px solid var(--line); }
+.case .demo a:hover { border-bottom-color: var(--ink); }
 .case__shot { flex: 0 0 160px; }
 .case__shot img {
   width: 100%;
