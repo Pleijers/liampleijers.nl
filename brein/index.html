@@ -33,6 +33,17 @@
 
     .vorm-kop { font-size: 13px; color: var(--faint); font-family: var(--font-mono); letter-spacing: 0.04em; text-transform: uppercase; }
 
+
+    /* Breder op een groot scherm: kop links, inhoud rechts (26-11) */
+    .wrap { max-width: 1080px; }
+    .kies { max-width: 720px; }
+    .hero .sub { max-width: 52ch; }
+    @media (min-width: 900px) {
+      main > section:not(.hero) { display: grid; grid-template-columns: 280px minmax(0, 1fr); column-gap: 64px; align-items: start; }
+      main > section:not(.hero) .kop { position: sticky; top: 32px; }
+      main > section:not(.hero) .kop h2 { font-size: 30px; }
+      .about .bio, .vergelijk, .demo-vraag { max-width: 680px; }
+    }
     @media (max-width: 560px) {
       .kies, .demo { grid-template-columns: 1fr; }
     }
@@ -65,8 +76,11 @@
 
       <!-- Het nieuwe werken -->
       <section id="nieuwe-werken" aria-labelledby="werken-kop">
-        <p class="eyebrow">Het nieuwe werken</p>
+        <div class="kop">
+          <p class="eyebrow">Het nieuwe werken</p>
         <h2 id="werken-kop">AI kan je pas echt helpen als het weet wat er speelt</h2>
+        </div>
+        <div class="inhoud">
         <div class="about">
           <div class="bio">
             <p>De meeste mensen gebruiken AI als een slimme chat: je plakt er iets in, je krijgt iets terug, en de volgende keer begin je opnieuw. Dat scheelt tijd, maar je manier van werken verandert er niet door.</p>
@@ -88,12 +102,16 @@
           </div>
         </div>
         <p class="demo-label">Voorbeeld op een verzonnen bedrijf.</p>
+        </div>
       </section>
 
       <!-- Twee vormen -->
       <section id="vormen" aria-labelledby="vormen-kop">
-        <p class="eyebrow">Twee vormen</p>
+        <div class="kop">
+          <p class="eyebrow">Twee vormen</p>
         <h2 id="vormen-kop">Welke van de twee ben jij?</h2>
+        </div>
+        <div class="inhoud">
         <div class="vergelijk">
           <div class="rij kop"><p>Solo Brain</p><p>Company Brain</p></div>
           <div class="rij"><p class="wat">Voor wie</p><p>Je werkt alleen, als freelancer of zelfstandige, in welk vak dan ook.</p><p>Je hebt een team tot zo'n 25 mensen, en de kennis zit in hoofden en in chatgeschiedenis.</p></div>
@@ -101,14 +119,18 @@
           <div class="rij"><p class="wat">Aan het eind</p><p>Je eerste dagstart draait, op je eigen agenda.</p><p>Het brein staat, je team werkt erin, en de eerste routine is gestart.</p></div>
           <div class="rij"><p class="wat">Daarna</p><p>Dertig dagen waarin je me alles kunt vragen. Daarna draai je het zelf.</p><p>Drie landingsmomenten, na twee, zes en twaalf weken. Daarna verder op eigen kracht of met vaste begeleiding.</p></div>
         </div>
+        </div>
       </section>
 
       <!-- ============ SOLO ============ -->
 
       <section id="solo" aria-labelledby="verhaal-kop">
-        <p class="vorm-kop">Solo Brain</p>
+        <div class="kop">
+          <p class="vorm-kop">Solo Brain</p>
         <p class="eyebrow" style="margin-top:18px">Hoe het bij mij ging</p>
         <h2 id="verhaal-kop">Minder ruis in je hoofd, meer projecten</h2>
+        </div>
+        <div class="inhoud">
         <div class="about">
           <div class="bio">
             <p>Voordat ik mijn tweede brein had, zat er te veel in mijn eigen hoofd. De rest stond in losse aantekeningen en to-do-lijstjes.</p>
@@ -116,11 +138,15 @@
             <p>Vanochtend had ik drie klanten in mijn agenda. Mijn tweede brein keek naar de blokken die het vorige week zelf had ingepland, haalde op hoeveel uur een klant deze maand nog had, en zette drie openstaande beslissingen voor me klaar. Ik hoefde alleen nog te kiezen.</p>
           </div>
         </div>
+        </div>
       </section>
 
       <section id="anders" aria-labelledby="anders-kop">
-        <p class="eyebrow">Wat het anders maakt</p>
+        <div class="kop">
+          <p class="eyebrow">Wat het anders maakt</p>
         <h2 id="anders-kop">Hoe het in elkaar zit</h2>
+        </div>
+        <div class="inhoud">
 
         <div class="block" data-reveal>
           <h3>Het weet wat er speelt</h3>
@@ -142,29 +168,41 @@
           <h3>Het denkt mee</h3>
           <p>Als je plant, legt het je week naast je doelen, en vraagt het of je je tijd geeft aan wat je echt wilt.</p>
         </div>
+        </div>
       </section>
 
       <section id="niet-alleen-werk" aria-labelledby="leven-kop">
-        <p class="eyebrow">Niet alleen werk</p>
+        <div class="kop">
+          <p class="eyebrow">Niet alleen werk</p>
         <h2 id="leven-kop">Het kent ook de rest van je leven</h2>
+        </div>
+        <div class="inhoud">
         <div class="about">
           <div class="bio">
             <p>Mijn tweede brein gaat niet alleen over klanten. Mijn freedive-trainingen staan erin, mijn schema voor de 10 kilometer en het Arabisch dat ik leer. Als ik mijn week plan, ligt dat er gewoon naast, en zie ik het als werk de rest begint op te eten.</p>
             <p>Bij jou kan dat iets heel anders zijn: een sport, een opleiding, sparen voor iets groots, of gewoon vaker vrij zijn op vrijdag. Het werkt hetzelfde: je zet erin wat je belangrijk vindt, en het weegt mee als je plant.</p>
           </div>
         </div>
+        </div>
       </section>
 
       <section id="gebruiken" aria-labelledby="gebruiken-kop">
-        <p class="eyebrow">Het belangrijkste</p>
+        <div class="kop">
+          <p class="eyebrow">Het belangrijkste</p>
         <h2 id="gebruiken-kop">Het wordt goed als je het gebruikt</h2>
+        </div>
+        <div class="inhoud">
         <p class="sub">Een tweede brein gaat leven als je het ook voor kleine dingen inzet: een idee, een afspraak, een gedachte over een klant. Gewoon even intypen.</p>
         <p class="hero-note">Daarom begeleid ik de eerste dertig dagen. Je hoeft er geen blok voor vrij te maken; het gaat om de kleine momenten tussendoor.</p>
+        </div>
       </section>
 
       <section id="route" aria-labelledby="route-kop">
-        <p class="eyebrow">Hoe het gaat</p>
+        <div class="kop">
+          <p class="eyebrow">Hoe het gaat</p>
         <h2 id="route-kop">Opzetten in één sessie</h2>
+        </div>
+        <div class="inhoud">
         <div class="steps">
           <div class="step" data-reveal><p class="n">01</p><p class="s">Voorbereiding</p><p>Een half uur tot drie kwartier. Je installeert je AI en plakt één prompt, die de rest klaarzet.</p></div>
           <div class="step" data-reveal><p class="n">02</p><p class="s">De sessie</p><p>Twee uur samen online. We vullen je tweede brein met wat je doet en waar je naartoe wilt, en koppelen je agenda. Aan het eind draait je eerste dagstart.</p></div>
@@ -173,36 +211,48 @@
           <div class="step" data-reveal><p class="n">05</p><p class="s">Dertig dagen</p><p>Vragen stel je via WhatsApp, zo vaak als je wilt.</p></div>
           <div class="step" data-reveal><p class="n">06</p><p class="s">Daarna</p><p>Je draait het zelf. Er is geen abonnement bij mij; je hebt alleen je eigen AI-abonnement nodig.</p></div>
         </div>
+        </div>
       </section>
 
       <!-- ============ COMPANY ============ -->
 
       <section id="company" aria-labelledby="verschil-kop">
-        <p class="vorm-kop">Company Brain</p>
+        <div class="kop">
+          <p class="vorm-kop">Company Brain</p>
         <p class="eyebrow" style="margin-top:18px">Voor een team</p>
         <h2 id="verschil-kop">Wat de een uitzoekt, weet de ander niet</h2>
+        </div>
+        <div class="inhoud">
         <div class="about">
           <div class="bio">
             <p>In de meeste teams gebruikt ieder voor zich AI. Wat iemand vorige week uitzocht of met een klant afsprak, staat in zijn eigen chatgeschiedenis.</p>
             <p>Een Company Brain draait dat om. Eerst gaat het bedrijf erin: waar je heen wilt, wat de cijfers zeggen, wie wat doet en hoe een project bij jullie loopt. Het staat in leesbare bestanden op jullie eigen account, en iedereen in het team werkt met dezelfde kennis. Dit doe ik samen met Thomas Booij.</p>
           </div>
         </div>
+        </div>
       </section>
 
       <section id="eigen-vak" aria-labelledby="vak-kop">
-        <p class="eyebrow">Niet het standaardwerk</p>
+        <div class="kop">
+          <p class="eyebrow">Niet het standaardwerk</p>
         <h2 id="vak-kop">De eerste routine komt uit je eigen vak</h2>
+        </div>
+        <div class="inhoud">
         <div class="about">
           <div class="bio">
             <p>Een brein verdient zich terug als het werk overneemt dat jullie elke week doen. Welk werk dat is, verschilt per bedrijf. Bij het ene bedrijf is het de offerte, bij het andere de rapportage aan klanten of het inwerken van een nieuwe collega.</p>
             <p>Die routine kiezen we niet vooraf. Hij volgt uit je doelen en je cijfers, en we bouwen hem op jullie eigen data en jullie eigen manier van werken.</p>
           </div>
         </div>
+        </div>
       </section>
 
       <section id="route-company" aria-labelledby="route-company-kop">
-        <p class="eyebrow">Hoe het gaat</p>
+        <div class="kop">
+          <p class="eyebrow">Hoe het gaat</p>
         <h2 id="route-company-kop">Drie dagdelen en een landing</h2>
+        </div>
+        <div class="inhoud">
         <div class="steps">
           <div class="step" data-reveal><p class="n">01</p><p class="s">Waar wil je heen</p><p>Waar wil je over een paar jaar staan, en wat doe je bewust niet? Daarnaast de basis: wat jullie verkopen en wie wat doet. Aan het eind staat de eerste versie van het brein en is hij al te gebruiken.</p></div>
           <div class="step" data-reveal><p class="n">02</p><p class="s">Je cijfers</p><p>Tussendoor zet je je cijfers in een map op jullie eigen computer, met een checklist erbij. Wij nemen niets mee; we kijken er samen naar. Geen cijfers, geen tweede dagdeel.</p></div>
@@ -211,23 +261,31 @@
           <div class="step" data-reveal><p class="n">05</p><p class="s">De landing</p><p>Na twee weken draait de eerste routine op jullie eigen data. Na zes weken kijken we naar het gebruik, na twaalf weken naar wat het oplevert.</p></div>
           <div class="step" data-reveal><p class="n">06</p><p class="s">Daarna</p><p>Het brein is van jullie en je kunt zelf door. Wil je dat we blijven helpen met de volgende routines, dan kan dat met een vast aantal uren per maand.</p></div>
         </div>
+        </div>
       </section>
 
       <section id="wie" aria-labelledby="wie-kop">
-        <p class="eyebrow">Wie</p>
+        <div class="kop">
+          <p class="eyebrow">Wie</p>
         <h2 id="wie-kop">Thomas en ik</h2>
+        </div>
+        <div class="inhoud">
         <div class="about">
           <div class="bio">
             <p>Ik run mijn eigen bedrijven met een tweede brein. Bij een marketingbureau werkt het team met een gedeeld brein: één voor de vakkennis van het bureau, en per klant een eigen brein eronder.</p>
           </div>
+        </div>
         </div>
       </section>
 
       <!-- ============ VOOR BEIDE ============ -->
 
       <section id="nodig" aria-labelledby="nodig-kop">
-        <p class="eyebrow">Eerlijk is eerlijk</p>
+        <div class="kop">
+          <p class="eyebrow">Eerlijk is eerlijk</p>
         <h2 id="nodig-kop">Wat je nodig hebt</h2>
+        </div>
+        <div class="inhoud">
         <div class="block" data-reveal>
           <h3>De codeversie van je AI</h3>
           <p>Je werkt met een AI die bij je bestanden kan, zoals Claude Code, Codex of Cursor, of je wilt dat leren. Een gewone chat-app is niet genoeg, en dat zeg ik liever nu dan in de sessie. Programmeren hoeft niet: de voorbereiding loodst je door de installatie.</p>
@@ -249,14 +307,19 @@
           <p>Dat hangt af van je situatie, en voor een team van de omvang. Ik noem het in de kennismaking, met de scope erbij.</p>
         </div>
         <p class="work-note">Wil je zien wat er precies in zit, bestand voor bestand? Dat staat op <a href="https://brain.booijanalytics.nl/het-brein/">brain.booijanalytics.nl</a>.</p>
+        </div>
       </section>
 
       <!-- Contact -->
       <section id="contact" aria-labelledby="contact-kop">
-        <p class="eyebrow">Contact</p>
+        <div class="kop">
+          <p class="eyebrow">Contact</p>
         <h2 id="contact-kop">Zin om kennis te maken?</h2>
+        </div>
+        <div class="inhoud">
         <p class="sub">Stuur me een mail met wat je doet, en of je alleen werkt of met een team. Dan plannen we een kennismaking.</p>
         <a class="btn" href="mailto:contact@liampleijers.nl?subject=Tweede%20brein">contact@liampleijers.nl</a>
+        </div>
       </section>
 
     </main>
